@@ -1,0 +1,170 @@
+/* Resets margins, paddings and sets box-sizing globally */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles including font, background, and centering content vertically and horizontally */
+body {
+    font-family: Arial, sans-serif;
+    /* Defines the basic font for the body */
+    background-color: #ddd;
+    /* Light gray background color */
+    display: flex;
+    justify-content: center;
+    /* Centers content horizontally */
+    align-items: center;
+    /* Centers content vertically */
+    height: 100vh;
+    /* Full viewport height */
+}
+
+/* Styling for login and registration containers */
+.login-container,
+.register-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    /* Subtle shadow for depth */
+    width: 400px;
+    /* Fixed width */
+    margin: auto;
+    /* Centering */
+}
+
+/* Form styling with column layout */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for headers in forms */
+h2 {
+    text-align: center;
+    color: #333;
+    /* Dark gray for text */
+    margin-bottom: 10px;
+}
+
+/* Styling for labels */
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    /* Medium gray */
+}
+
+/* Styling for various input fields */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    /* Light gray border */
+    border-radius: 4px;
+}
+
+/* Checkbox styling for remember me option */
+.checkbox {
+    margin-bottom: 10px;
+}
+
+.checkbox label {
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+    /* Slightly darker gray */
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Button styling with hover effect */
+button {
+    background-color: #5c67f2;
+    /* Blue background */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5058e5;
+    /* Darker blue on hover */
+}
+
+/* Message styling for links to switch between login and register */
+.message {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.message a {
+    color: #5c67f2;
+    /* Blue text for links */
+    text-decoration: none;
+}
+
+.message a:hover {
+    text-decoration: underline;
+    /* Underline on hover for emphasis */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+
+    .login-container,
+    .register-container {
+        width: 90%;
+        /* More fluid width on small screens */
+        padding: 30px;
+        /* Reduced padding */
+    }
+
+    label,
+    .message {
+        font-size: 16px;
+        /* Larger font size for better readability */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    button {
+        font-size: 14px;
+        /* Adjust font size for inputs and buttons */
+    }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 280px) {
+
+    .login-container,
+    .register-container {
+        padding: 20px;
+        /* Minimal padding */
+    }
+
+    label,
+    .message {
+        font-size: 14px;
+        /* Smaller font size */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    button {
+        font-size: 12px;
+        /* Smallest practical font size for readability */
+    }
+}

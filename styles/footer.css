@@ -1,0 +1,261 @@
+/* Imports Roboto and Rubik fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Resets default margin, padding, and sets consistent box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Defines root color variables for light and dark modes */
+:root {
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+
+/* Overrides color variables for dark mode */
+.dark_mode {
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+
+/* Utility classes for show/hide elements */
+.show {
+    display: inline;
+}
+
+.hide {
+    display: none;
+}
+
+/* Sets default background color for the body */
+body {
+    background-color: #f7f7f7;
+}
+
+/* Removes default list styling */
+li {
+    list-style: none;
+}
+
+/* Removes default text decoration from links */
+a {
+    text-decoration: none;
+}
+
+/* Styling for footer, with positioning and background properties */
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    box-shadow: 0 16px 70px -8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 20px 0 0;
+    transition: background 0.3s linear;
+}
+
+/* Max-width and padding settings for footer container */
+.container-footer {
+    max-width: 1240px;
+    padding: 30px 40px;
+    margin: auto;
+}
+
+/* Flexbox layout for footer content */
+.content_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Styling for the logo area within the footer */
+.profile .logo_area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Circular images with border in the logo area */
+.profile .logo_area img {
+    border-radius: 50%;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+}
+
+/* Styling for the logo name link */
+.logo_area .logo-name a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 1rem;
+    color: var(--secondary-color);
+}
+
+/* Button styling in the logo area */
+.logo_area button {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+
+/* Color for the sun icon in the logo area */
+.logo_area .sun {
+    color: #fff;
+    font-size: 22px;
+}
+
+/* Maximum width and margin settings for the description area */
+.desc_area {
+    max-width: 320px;
+    margin-bottom: 1.25rem;
+}
+
+/* Styling for paragraph text and hover effect in the description area */
+.desc_area p {
+    color: #828282;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.desc_area p:hover {
+    color: #313131;
+    text-decoration: underline;
+}
+
+/* Color and spacing for social media links */
+.social_media a {
+    color: #828282;
+    margin-right: 22px;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.social_media a:hover {
+    color: #313131;
+}
+
+/* Layout for service areas in the footer */
+.service_area {
+    display: flex;
+}
+
+/* Margin and padding for service headers */
+.service_header {
+    margin-right: 40px;
+}
+
+/* Styling for service names */
+li.service_name {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+/* Link styling in service headers */
+.service_header li a {
+    color: #828282;
+    padding-bottom: 1px;
+    font-weight: 400;
+}
+
+.service_header li a:hover {
+    color: #313131;
+    text-decoration: underline;
+}
+
+/* Margin for list items in service headers */
+.service_header li {
+    margin-bottom: 10px;
+}
+
+/* Icon sizing and alignment for the payment icons container */
+.icon-container {
+    font-size: 20px;
+    text-align: end;
+    margin-bottom: 10px;
+}
+
+/* Styling for the horizontal rule in the footer */
+hr {
+    height: 1px;
+    border: none;
+    background-color: #828282;
+    margin-bottom: 1rem;
+}
+
+/* Flex layout for the bottom part of the footer */
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+/* Styling for copyright text */
+.copy_right {
+    color: #828282;
+    display: flex;
+    align-items: center;
+}
+
+.copy_right span {
+    margin-left: 8px;
+    font-weight: 400;
+    letter-spacing: 0.135rem;
+}
+
+/* Styling for terms of use links */
+.tou {
+    margin-top: 10px;
+}
+
+.tou a {
+    color: #828282;
+    margin-left: 1.5rem;
+}
+
+.tou a:hover {
+    color: #313131;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for footer content */
+@media screen and (max-width: 768px) {
+
+    .content_footer,
+    .service_area {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .service_header {
+        margin-left: 0;
+        margin-right: 40px;
+    }
+
+    .social_media {
+        margin-bottom: 1rem;
+    }
+
+    .footer_bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    .service_header,
+    .copy_right {
+        margin-bottom: 8px;
+    }
+
+    .tou {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}

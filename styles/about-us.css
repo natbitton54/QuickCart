@@ -1,0 +1,175 @@
+/* General Reset for all elements: Removes margin, padding, and sets box-sizing to border-box */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for body element, setting default font and color */
+body {
+    font-family: "Open Sans", sans-serif;
+    /* Sets a clean, modern sans-serif font for the page */
+    background-color: #fff;
+    /* Background color set to white */
+    color: #333;
+    /* Default text color set to dark grey for readability */
+}
+
+/* Styling specific to the .about section, typically for an About Us page */
+.about {
+    padding-top: 70px;
+    /* Adds space above the content */
+}
+
+/* Styling for secondary headers within the .about section */
+.about-h2 {
+    font-size: 28px;
+    /* Size of the header font */
+    margin-left: 20px;
+    /* Left margin for alignment */
+    margin-top: 10px;
+    /* Top margin for spacing */
+    color: #a1a1a1;
+    /* Light grey color for the header text */
+}
+
+/* General styling for sections in the about page */
+.about-section {
+    width: 80%;
+    /* Sets the width of the section to 80% of its parent */
+    margin: 2rem auto;
+    /* Centers the section horizontally and adds vertical spacing */
+    padding: 2rem;
+    /* Padding inside the sections */
+}
+
+/* Styles for breadcrumb link positioning */
+.link-position {
+    background-color: #f5f5f5;
+    /* Light grey background for the link section */
+    width: 100%;
+    /* Full width */
+    padding: 50px;
+    /* Padding around the links */
+}
+
+/* Link styles within the .link-position container */
+.link-position a {
+    color: #aaa;
+    /* Light grey color for the links */
+}
+
+/* Larger header styles used in the .about section */
+.about-h1 {
+    font-size: 38px;
+    /* Larger font size for primary headers */
+}
+
+/* Styling for the main content container */
+.content {
+    width: 80%;
+    /* Width of the container to 80% */
+    max-width: 1300px;
+    /* Maximum width to maintain layout integrity */
+    margin: 40px auto;
+    /* Margin for vertical spacing and horizontal centering */
+    padding: 150px 20px;
+    /* Padding inside the content container */
+    display: flex;
+    /* Enables flexible box layout */
+    flex-wrap: wrap;
+    /* Allows items to wrap as needed */
+    justify-content: space-between;
+    /* Distributes space between and around content items */
+}
+
+/* Styling for text and video sections within .content */
+.text-section,
+.video-section {
+    flex-basis: calc(50% - 20px);
+    /* Calculates width for each section, subtracting margin */
+    box-sizing: border-box;
+    /* Includes padding and border in the element's width and height */
+}
+
+/* Style for sections within .text-section and .video-section */
+.section {
+    margin-bottom: 40px;
+    /* Bottom margin for spacing between sections */
+}
+
+/* Header styling within .section */
+.section-header {
+    font-size: 24px;
+    /* Font size for section headers */
+    margin-bottom: 20px;
+    /* Bottom margin for spacing */
+    position: relative;
+    /* Position relative for pseudo-element positioning */
+}
+
+/* Pseudo-element for decorative underline effect */
+.section-header::after {
+    content: '';
+    /* Required for pseudo-elements */
+    position: absolute;
+    /* Positions relative to the section-header */
+    bottom: -10px;
+    /* Position from the bottom of the header */
+    left: 0;
+    /* Aligns to the left */
+    width: 50px;
+    /* Width of the underline */
+    height: 3px;
+    /* Height of the underline */
+    background-color: #e74c3c;
+    /* Red color for the underline */
+}
+
+/* Text styling for paragraphs within .section */
+.section-text {
+    line-height: 1.6;
+    /* Increases the line height for readability */
+}
+
+/* Styling for the video wrapper to maintain aspect ratio */
+.video-wrapper {
+    position: relative;
+    /* Relative positioning for absolute child positioning */
+    padding-top: 56.25%;
+    /* Aspect ratio padding-top hack (16:9 ratio) */
+}
+
+/* Styling for responsive embedded videos */
+.responsive-video {
+    position: absolute;
+    /* Absolute positioning to fill the wrapper */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Full width of the parent */
+    height: 100%;
+    /* Full height of the parent */
+    border: none;
+    /* Removes any default border */
+}
+
+/* Media query for adjustments on smaller screens */
+@media (max-width: 1200px) {
+
+    .text-section,
+    .video-section {
+        flex-basis: 100%;
+        /* Each section takes full width on smaller screens */
+    }
+
+    .section-header {
+        font-size: 20px;
+        /* Smaller font size for headers on small screens */
+    }
+
+    .video-wrapper {
+        padding-top: 75%;
+        /* Adjust aspect ratio padding for different orientations */
+    }
+}

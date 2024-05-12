@@ -1,0 +1,274 @@
+/* General reset styles for all elements to ensure consistency across browsers */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Default body styles, setting the font and background color */
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #fff;
+    /* Sets background color to white for a clean look */
+}
+
+/* Specific styling for the .cart class for page-specific layout adjustments */
+.cart {
+    padding-top: 70px;
+}
+
+/* Styling for secondary headers within the cart section */
+.cart-h2 {
+    font-size: 28px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #a1a1a1;
+}
+
+/* Container style for sections within the cart area */
+.cart-section {
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+/* Background and padding for link positions, typically used for breadcrumbs */
+.link-position {
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 50px;
+}
+
+/* Style modifications for links within the .link-position */
+.link-position a {
+    color: #aaa;
+}
+
+/* Large header styles for major headings in the cart page */
+.cart-h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Styling for the main container that holds cart items */
+.cart-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox layout for individual cart items */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Styling for product images within cart items */
+.product-image {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    /* Adds right margin for spacing from the next element */
+}
+
+/* Flex container for holding item details like title and quantity */
+.item-details {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Distributes space between elements inside */
+}
+
+/* Styling for product title within item details */
+.product-title {
+    font-weight: bold;
+}
+
+/* Input field for item quantity adjustment */
+.quantity-input {
+    width: 50px;
+    margin-right: 20px;
+    /* Adds right margin for spacing */
+}
+
+/* Styling for the button used to remove items from the cart */
+.remove-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for remove button to indicate interactivity */
+.remove-btn:hover {
+    background-color: red;
+}
+
+/* Right-aligned container for displaying the cart summary, like total cost */
+.cart-summary {
+    text-align: right;
+    margin-top: 139px;
+}
+
+/* Styling for displaying the total amount in the cart */
+#total-amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Styling for the checkout button to make it prominent */
+#checkout-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#checkout-button:hover{
+    background-color: #40bc44;
+}
+
+#checkout-button:disabled {
+    background-color: #666;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Media queries for responsive design, adjusting layout for smaller screens */
+@media (max-width: 768px) {
+    .cart-item {
+        flex-wrap: wrap;
+        /* Allows items to wrap to next line on smaller screens */
+    }
+
+    .product-image {
+        width: 100px;
+        /* Reduces width for smaller screens */
+        height: auto;
+        /* Adjusts height automatically to maintain aspect ratio */
+    }
+
+    .item-details {
+        flex-grow: 1;
+        /* Allows the details to fill the available space */
+        min-width: 150px;
+        /* Ensures a minimum width for item details */
+    }
+
+    .quantity-input {
+        margin-top: 10px;
+        /* Adds top margin for spacing when wrapped */
+    }
+
+    .remove-btn {
+        margin-top: 10px;
+        /* Adds top margin for visual separation */
+    }
+
+    .cart-summary {
+        text-align: center;
+        /* Centers the summary text on smaller screens */
+    }
+
+    #checkout-button {
+        width: 100%;
+        /* Makes the button full width for easier access */
+    }
+}
+
+/* Additional responsive adjustments for even smaller screens */
+@media (max-width: 767px) {
+    .cart-item {
+        flex-direction: column;
+    }
+
+    .product-image {
+        width: 100%;
+        /* Full width for the image */
+        max-width: 200px;
+        /* Limits maximum width to maintain size */
+        height: auto;
+        /* Adjusts height automatically */
+        margin-bottom: 10px;
+        /* Adds bottom margin for spacing */
+    }
+
+    .item-details {
+        width: 100%;
+        /* Full width for item details to use available space */
+    }
+}
+
+@media (max-width: 400px) {
+    .cart-item {
+        flex-direction: row;
+        /* Keeps items in a row at very narrow widths */
+    }
+
+    .product-image {
+        margin-right: 10px;
+        /* Ensures spacing between image and details */
+        margin-bottom: 0;
+        /* Removes bottom margin */
+    }
+
+    .item-details {
+        flex-grow: 1;
+        /* Allows details to grow and fill available space */
+    }
+}
+
+@media (max-width: 370px) {
+    .cart-item {
+        flex-direction: column;
+        /* Stacks items vertically for very small widths */
+        align-items: center;
+        /* Centers items horizontally */
+    }
+
+    .item-details {
+        display: flex;
+        flex-direction: column;
+        /* Stacks details vertically */
+        align-items: center;
+        /* Centers the details */
+        width: 100%;
+        /* Full width to utilize all available space */
+    }
+
+    .remove-btn {
+        order: 3;
+        /* Positions the remove button below other elements */
+        width: 100%;
+        /* Full width for easier access */
+        margin-top: 10px;
+        /* Adds top margin for spacing */
+    }
+
+    .quantity-container {
+        margin-bottom: 10px;
+        /* Adds bottom margin for spacing */
+    }
+
+    .product-title,
+    .product-price {
+        margin-top: 10px;
+        /* Adds top margin for spacing */
+    }
+}

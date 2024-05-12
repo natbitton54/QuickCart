@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/contact-us.css">
+    <title>Contact Us - Quick Cart</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- Primary Nav for Desktop -->
+        <div class="nav-link desktop-nav">
+            <a href="../index.html">Home</a>
+            <a href="../pages/products.html">Products</a>
+            <a href="../pages/contact-us.html">Contact us</a>
+            <a href="../pages/about-us.html">About us</a>
+        </div>
+        <!-- Hamburger Menu for Mobile -->
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!-- Logo -->
+        <div class="logo">
+            <!-- image sourced from [https://iconscout.com/icon/fast-cart-9795013] -->
+            <a href="../index.html" class="logo"><img src="../img/cart.png" alt="cart-logo"> QuickCart </a>
+        </div>
+
+        <!-- Secondary Nav for Desktop -->
+        <div class="nav-link desktop-nav">
+            <a href="#">
+                <i class="fas fa-search"></i>
+            </a>
+
+            <div class="user-icon">
+                <i class="fas fa-user"></i>
+                <div class="user-dropdown">
+                    <a href="#" class="logout-button">Logout</a>
+                </div>
+            </div>
+
+            <a href="#">
+                <i class="fas fa-heart"></i>
+            </a>
+            <a href="../pages/cart.html">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+        <!-- Shop Bag Icon for Mobile -->
+        <div class="shop-bag ">
+            <div class="user-icon">
+                <i class="fas fa-user"></i>
+                <div class="user-dropdown">
+                    <a href="#" class="logout-button">Logout</a>
+                </div>
+            </div>
+            <a href="../pages/cart.html" style="margin-left: 10px;">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- main content -->
+    <main class="contact">
+        <!-- Breadcrumb navigation and page title -->
+        <div class="link-position">
+            <p>
+                <a href="../index.html">Home</a> / <a href="../pages/contact-us.html">Contact</a>
+            </p>
+
+            <h2 class="contact-h2">Contact Us</h2>
+        </div>
+
+        <!-- contact form -->
+        <section class="contact-section">
+            <h1 class="contact-h1">Contact QuickCart</h1>
+            <p class="p">
+                <span>Need help? Fill out the form below.</span>
+                <i>If you have any questions, please don't hesitate to reach out to us.</i>
+                <span>You can also reach out directly to our customer service team at <a
+                        href="mailto:support@quickcart.com">support@quickcart.com</a></span>
+            </p>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="firstName">*First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">*Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="email">*Email:</label>
+                <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+            </div>
+            <div class="form-group">
+                <label for="message">*Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+        <p class="sent" id="sent" style="margin-top: 10px; color: green;"></p>
+
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-footer">
+            <div class="content_footer">
+                <div class="profile">
+                    <div class="logo_area">
+                        <!-- image sourced from [https://iconscout.com/icon/fast-cart-9795013] -->
+                        <a href="../index.html"><img src="../img/cart.png" alt="quickcart"></a>
+                        <span class="logo-name"><a href="../index.html">QuickCart</a></span>
+                        <button id="dark-mode" class="moon"><i class="fa-solid fa-moon"></i></button>
+                        <button id="light-mode" class="sun hide"><i class="fa-solid fa-sun"></i></button>
+                    </div>
+                    <div class="desc_area">
+                        <p>Explore QuickCart for a fast, reliable, and delightful shopping experience with exclusive
+                            deals just a click away! </p>
+                    </div>
+                    <div class="social_media">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="service_area">
+                    <ul class="service_header">
+                        <li class="service_name">Services</li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                    </ul>
+                </div>
+                <div class="service_area">
+                    <ul class="service_header">
+                        <li class="service_name">Quick Links</li>
+                        <li><a href="#">Special Offers</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="../pages/contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="service_area">
+                    <ul class="service_header">
+                        <li class="service_name">About QuickCart</li>
+                        <li><a href="../pages/about-us.html">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-cc-visa" style="color:navy;"></i>
+                <i class="fab fa-cc-amex" style="color:blue;"></i>
+                <i class="fab fa-cc-mastercard" style="color:red;"></i>
+                <i class="fab fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <hr>
+            <div class="footer_bottom">
+                <span>© 2024 QuickCart | All rights reserved</span>
+                <div class="copy_right">
+                </div>
+                <div class="tou"> <!-- terms of users-->
+                    <a href="#">Term of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script external js -->
+    <script src="../js/index.js"></script>
+    <script src="../js/best-selling.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/contact-form.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+
+</html>

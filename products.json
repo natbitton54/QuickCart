@@ -1,0 +1,282 @@
+{
+  "bestSelling": [
+    {
+      "id": "1",
+      "name": "Nike Vomero 17 Men's Road Running Shoes",
+      "image": "./img/products-shoes/best-selling-nike-vomero.png",
+      "price": "$155",
+      "actualPrice": "$310",
+      "addToCartButton": true
+    },
+    {
+      "id": "2",
+      "name": "Nike Air Force 1 '07 LE Low",
+      "image": "./img/products-shoes/best-selling-nike-af1.png",
+      "price": "$105",
+      "actualPrice": "$150",
+      "addToCartButton": true
+    },
+    {
+      "id": "3",
+      "name": "Deviate NITRO™ Elite 2 Men's Running Shoes",
+      "image": "./img/products-shoes/best-selling-Deviate-NITR-Elite-2-Men's.png",
+      "price": "$195",
+      "actualPrice": "$260",
+      "addToCartButton": true
+    },
+    {
+      "id": "4",
+      "name": "Y-3 RIVALRY",
+      "image": "./img/products-shoes/best-selling-Y-3_Rivalry_White_FZ6396_01_standard.png",
+      "price": "$338",
+      "actualPrice": "$520",
+      "addToCartButton": true
+    },
+    {
+      "id": "5",
+      "name": "Dime Club C Revenge Shoes",
+      "image": "./img/products-shoes/best-selling-rebook-dime.png",
+      "price": "$148",
+      "actualPrice": "$185",
+      "addToCartButton": true
+    },
+    {
+      "id": "6",
+      "name": "Made in USA 990v6",
+      "image": "./img/products-shoes/best-selling-new-balance.png",
+      "price": "$234",
+      "actualPrice": "$260",
+      "addToCartButton": true
+    },
+    {
+      "id": "7",
+      "name": "Nike Air Max Plus",
+      "image": "./img/products-shoes/best-selling-nike-air-max.png",
+      "price": "$196",
+      "actualPrice": "$245",
+      "addToCartButton": true
+    }
+  ],
+  "PopularProducts": [
+    {
+      "id": "8",
+      "name": "Nike Dunk Low Retro",
+      "price": "$150",
+      "image": "./img/products-shoes/popular-shoe-nike-dunk-low.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "9",
+      "name": "Jumpman MVP Shoes",
+      "price": "$215",
+      "image": "./img/products-shoes/popular-shoe-nike-jordan-mvp.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "10",
+      "name": "Nike Air Force 1 07",
+      "price": "$150",
+      "image": "./img/products-shoes/popular-shoe-nike-af1-low.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "11",
+      "name": "Air Jordan 4 Retro Royalty",
+      "price": "$450",
+      "image": "./img/products-shoes/popular-shoe-nike-royalty-retro.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "12",
+      "name": "Reebok CL Nylon",
+      "price": "$120",
+      "image": "./img/products-shoes/popular-reebok-shoe.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "13",
+      "name": "Adidas ULTRABOOST 1.0",
+      "price": "$260",
+      "image": "./img/products-shoes/popular-adidas-shoe.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "14",
+      "name": "Puma Softride Enzo Nxt",
+      "price": "$120",
+      "image": "./img/products-shoes/popular-puma-shoe.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "15",
+      "name": "New Balance More v4",
+      "price": "$120",
+      "image": "./img/products-shoes/popular-NB-shoe.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "16",
+      "name": "Nike Air Jordan 1 Taxi",
+      "price": "$360",
+      "image": "./img/products-shoes/popular-shoe-nike-jordan-air-1.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "17",
+      "name": "Adidas SUPERSTAR",
+      "price": "$160",
+      "image": "./img/products-shoes/popular-shoe-adidas-superstar.png",
+      "addToCartButton": true
+    }
+  ],
+  "Nike": [
+    {
+      "id": "18",
+      "name": "Nike Air Max 270",
+      "price": "$210",
+      "image": "./img/products-shoes/nike-air-max-270.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "19",
+      "name": "Nike Air Trainer 1",
+      "price": "$140",
+      "image": "./img/products-shoes/nike-air-trainer-1.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "20",
+      "name": "Nike Air Force 1 Low",
+      "price": "$165",
+      "image": "./img/products-shoes/nike-af1-low.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "21",
+      "name": "Nike Downshifter 12",
+      "price": "$110",
+      "image": "./img/products-shoes/downshifter-12-road-running-shoes.png",
+      "addToCartButton": true
+    }
+  ],
+  "Adidas": [
+    {
+      "id": "22",
+      "name": "Adidas NMD R1 V2",
+      "price": "$140",
+      "image": "./img/products-shoes/adidas-nmd-r1-v2.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "23",
+      "name": "Adidas Kaptir 2.0",
+      "price": "$120",
+      "image": "./img/products-shoes/adidas-kaptir-2.0.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "24",
+      "name": "Adidas Forum Low",
+      "price": "$110",
+      "image": "./img/products-shoes/adidas-forum-low.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "25",
+      "name": "Adidas ozweego",
+      "price": "$160",
+      "image": "./img/products-shoes/adidas-ozweego.png",
+      "addToCartButton": true
+    }
+  ],
+  "Puma": [
+    {
+      "id": "26",
+      "name": "Puma Softstride Premier",
+      "price": "$170",
+      "image": "./img/products-shoes/puma-softstride-premier.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "27",
+      "name": "Puma ForeverRun NITRO™",
+      "price": "$200",
+      "image": "./img/products-shoes/puma-ForeverRun-NITRO.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "28",
+      "name": "Puma ELECTRIFY NITRO 2",
+      "price": "$130",
+      "image": "./img/products-shoes/puma-ELECTRIFY%20NITRO.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "29",
+      "name": "Puma SUEDE CLASSIC+",
+      "price": "$110",
+      "image": "./img/products-shoes/puma-suede-classic.png",
+      "addToCartButton": true
+    }
+  ],
+  "Reebok": [
+    {
+      "id": "30",
+      "name": "Reebok Premier Trinity Kfs",
+      "price": "$200",
+      "image": "./img/products-shoes/Reebok_Premier_Trinity_KFS.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "31",
+      "name": "Reebok Zig Dynamica Str",
+      "price": "$115",
+      "image": "./img/products-shoes/reebok-Zig-Dynamica-Str.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "32",
+      "name": "Reebok Nano X4",
+      "price": "$175",
+      "image": "./img/products-shoes/Reebok-Nano-X4.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "33",
+      "name": "Reebok Fluxlite",
+      "price": "$105",
+      "image": "./img/products-shoes/reebok-fluxlite.png",
+      "addToCartButton": true
+    }
+  ],
+  "NewBalance": [
+    {
+      "id": "34",
+      "name": "New Balance Fresh Foam X 1440",
+      "price": "$120",
+      "image": "./img/products-shoes/new-balance-foam-1440.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "35",
+      "name": "New Balance FuelCell Propel v4",
+      "price": "$150",
+      "image": "./img/products-shoes/nb-FuelCell-propel.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "36",
+      "name": "New Balance 530",
+      "price": "$130",
+      "image": "./img/products-shoes/530_new_balance.png",
+      "addToCartButton": true
+    },
+    {
+      "id": "37",
+      "name": "MSFTSrep x New Balance 0.01",
+      "price": "$155",
+      "image": "./img/products-shoes/MSFTSrep%20x%20New%20Balance%200.01.png",
+      "addToCartButton": true
+    }
+  ]
+}

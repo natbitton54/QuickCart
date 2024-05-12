@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - QuickCart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/checkout.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <!-- image sourced from [https://iconscout.com/icon/fast-cart-9795013] -->
+            <a href="../index.html" class="logo"><img src="../img/cart.png" alt="cart-logo"> QuickCart </a>
+        </div>
+
+        <!-- Secondary Nav for Desktop -->
+        <div class="nav-link desktop-nav">
+            <a href="../pages/cart.html">
+                <i class="fas fa-shopping-bag"></i>
+            </a>
+        </div>
+        <!-- Shop Bag Icon for Mobile -->
+        <div class="shop-bag ">
+            <a href="../pages/cart.html" style="margin-left: 10px;">
+                <i class="fas fa-shopping-bag"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- main content -->
+    <main class="checkout">
+        <!-- Breadcrumb navigation and page title -->
+
+        <div class="link-position">
+            <p>
+                <a href="../pages/cart.html">Cart</a> / <a href="../pages/checkout.html">Checkout</a>
+            </p>
+            <h2 class="checkout-h2" style="color: #aba1a1;">Checkout</h2>
+        </div>
+
+        <!-- checkout form -->
+        <section class="container-checkout">
+            <h2>Checkout</h2>
+            <form id="checkout-form" method="post">
+                <div class="col-50">
+                    <h3 style="margin-bottom: 10px;">Shipping Address</h3>
+                    <div class="form-group">
+                        <label for="fname">Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="adr">Address</label>
+                        <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="Montreal" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-50">
+                            <div class="form-group">
+                                <label for="postal">Postal Code</label>
+                                <input type="text" id="postal" name="postal" placeholder="A1B 3C6" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Information -->
+                <div class="col-50">
+                    <h3>Payment</h3>
+                    <div class="icon-container">
+                        <i class="fab fa-cc-visa" style="color:navy;"></i>
+                        <i class="fab fa-cc-amex" style="color:blue;"></i>
+                        <i class="fab fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fab fa-cc-discover" style="color:orange;"></i>
+                    </div>
+                    <div class="form-group">
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="06" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-50">
+                            <div class="form-group">
+                                <label for="expyear">Exp Year</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="2024" required>
+                            </div>
+                        </div>
+                        <div class="col-50">
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="352" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Pay now</button>
+            </form>
+            <div class="summary">
+                <h3 class="order">Order Summary</h3>
+                <p class="items">Items: </p>
+                <p class="shipping">Shipping: </p>
+                <p class="total">Total: </p>
+            </div>
+        </section>
+
+        <!-- external js link -->
+        <script src="../js/product&cart-load.js" defer></script>
+        <script src="../js/checkout.js" defer></script>
+
+    </main>
+
+</html>

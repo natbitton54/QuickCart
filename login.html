@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets the viewport to ensure proper scaling and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external CSS for styling the login page -->
+    <link rel="stylesheet" href="./styles/login-register.css">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <!-- Container for the login form -->
+    <div class="login-container">
+        <!-- Form for user login. The action attribute points to the server endpoint that handles the login -->
+        <form method="post">
+            <h2>Login</h2> <!-- Title for the form -->
+
+            <!-- Label and input field for username -->
+            <label for="username">Email</label>
+            <input type="text" id="username" name="username">
+
+            <!-- Label and input field for password. The 'required' attribute makes the field mandatory -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Checkbox for the option to stay signed in -->
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="keepMeSignedIn"> Remember me
+                </label>
+            </div>
+
+
+            <!-- Submit button for the form -->
+            <button>Login</button>
+
+            <!-- Link for users to navigate to the registration page if they do not have an account -->
+            <p class="message">Not registered? <a href="./pages/register.html">Create an account</a></p>
+        </form>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="./js/index.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

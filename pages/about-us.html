@@ -1,0 +1,200 @@
+<!-- all products images sourced in [https://www.nike.com/ca/]  
+    [https://reebok.ca/] [https://ca.puma.com/ca/en] [https://www.adidas.ca/en] [https://www.newbalance.ca/]-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Multiple versions of Font Awesome for icons, though it's better to stick to one version -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Stylesheets for the website -->
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/about-us.css">
+    <title>About QuickCart</title>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <!-- Desktop navigation links -->
+        <div class="nav-link desktop-nav">
+            <a href="../index.html">Home</a>
+            <a href="../pages/products.html">Products</a>
+            <a href="../pages/contact-us.html">Contact us</a>
+            <a href="../pages/about-us.html">About us</a>
+        </div>
+        <!-- Hamburger menu for mobile view -->
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!-- Website logo -->
+        <div class="logo">
+            <!-- image sourced from [https://iconscout.com/icon/fast-cart-9795013] -->
+            <a href="../index.html" class="logo"><img src="../img/cart.png" alt="cart-logo"> QuickCart </a>
+        </div>
+        <!-- Secondary navigation links and user interaction icons -->
+        <div class="nav-link desktop-nav">
+            <a href="#">
+                <i class="fas fa-search"></i> <!-- Search icon -->
+            </a>
+            <div class="user-icon">
+                <i class="fas fa-user"></i> <!-- User icon -->
+                <!-- Dropdown menu for user actions -->
+                <div class="user-dropdown">
+                    <a href="#" class="logout-button">Logout</a>
+                </div>
+            </div>
+            <a href="#">
+                <i class="fas fa-heart"></i> <!-- Favorites icon -->
+            </a>
+            <a href="../pages/cart.html">
+                <i class="fas fa-shopping-bag"></i> <!-- Shopping bag icon -->
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+        <!-- Mobile icons for user and shopping bag -->
+        <div class="shop-bag">
+            <div class="user-icon">
+                <i class="fas fa-user"></i>
+                <div class="user-dropdown">
+                    <a href="#" class="logout-button">Logout</a>
+                </div>
+            </div>
+            <a href="../pages/cart.html" style="margin-left: 10px;">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main content area for the About Us page -->
+    <main class="about">
+        <!-- Breadcrumb navigation and page title -->
+        <div class="link-position">
+            <p>
+                <a href="../index.html">Home</a> / <a href="../pages/about-us.html">About</a>
+            </p>
+            <h2 class="about-h2">About Us</h2>
+        </div>
+        <!-- Sections detailing the mission and vision of the company -->
+        <div class="content">
+            <div class="text-section">
+                <div class="section">
+                    <h2 class="section-header">Our Mission</h2>
+                    <p class="section-text">
+                        Our mission at QuickCart is to empower individuals and businesses to shop smarter and more
+                        conveniently...
+                    </p>
+                </div>
+                <div class="section">
+                    <h2 class="section-header">Our Vision</h2>
+                    <p class="section-text">
+                        At QuickCart, our vision is to redefine the online shopping experience...
+                    </p>
+                </div>
+            </div>
+            <!-- Video section for additional multimedia engagement -->
+            <div class="video-section">
+                <div class="video-wrapper">
+                    <video class="responsive-video" controls>
+                        <!-- video sourced from youtube [https://www.youtube.com/watch?v=8exM6VUgZFA&t=4s] -->
+                        <source src="../img/video-ad/SnapSave.io-Ecommerce promotion-(1080p).mp4" type="video/mp4">
+                        <source src="../img/video-ad/SnapSave.io-Ecommerce promotion-(1080p).webm" type="video/webm">
+                        <source src="../img/video-ad/SnapSave.io-Ecommerce promotion-(1080p).ogg" type="video/ogg">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer with company information, services, and social media links -->
+    <footer>
+        <div class="container-footer">
+            <div class="content_footer">
+                <!-- Profile section with logo and company philosophy -->
+                <div class="profile">
+                    <div class="logo_area">
+                        <!-- image sourced from [https://iconscout.com/icon/fast-cart-9795013] -->
+                        <a href="../index.html"><img src="../img/cart.png" alt="quickcart"></a>
+                        <span class="logo-name"><a href="../index.html">QuickCart</a></span>
+                        <!-- Theme toggles for dark and light mode -->
+                        <button id="dark-mode" class="moon"><i class="fa-solid fa-moon"></i></button>
+                        <button id="light-mode" class="sun hide"><i class="fa-solid fa-sun"></i></button>
+                    </div>
+                    <div class="desc_area">
+                        <p>Explore QuickCart for a fast, reliable, and delightful shopping experience with exclusive
+                            deals...</p>
+                    </div>
+                    <!-- Social media icons for increased engagement -->
+                    <div class="social_media">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <!-- Lists of services and quick links for easy navigation -->
+                <div class="service_area">
+                    <ul class="service_header">
+                        <li class="service_name">Services</li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                    </ul>
+                </div>
+                <div class="service_area">
+                    <ul class="service_header">
+                        <li class="service_name">Quick Links</li>
+                        <li><a href="#">Special Offers</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="../pages/contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="service_area">
+                    <ul class="service_header">
+                        <li class="service_name">About QuickCart</li>
+                        <li><a href="../pages/about-us.html">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Payment icons for visual confirmation of supported payment methods -->
+            <div class="icon-container">
+                <i class="fab fa-cc-visa" style="color:navy;"></i>
+                <i class="fab fa-cc-amex" style="color:blue;"></i>
+                <i class="fab fa-cc-mastercard" style="color:red;"></i>
+                <i class="fab fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <hr>
+            <!-- Legal and copyright information at the bottom of the footer -->
+            <div class="footer_bottom">
+                <span>© 2024 QuickCart | All rights reserved</span>
+                <div class="copy_right">
+                </div>
+                <!-- Links to terms of use and privacy policy -->
+                <div class="tou"> <!-- terms of users-->
+                    <a href="#">Term of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External scripts for FontAwesome icons and site-specific JavaScript -->
+    <script src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/best-selling.js"></script>
+    <script src="../js/logout.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport settings ensure the page scales correctly on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external stylesheet for styling specific to the login and registration forms -->
+    <link rel="stylesheet" href="../styles/login-register.css">
+    <title>Register Page</title>
+</head>
+
+<body>
+    <!-- Container for the registration form -->
+    <div class="register-container">
+        <!-- Form for user registration with POST method to submit data securely -->
+        <form method="post">
+            <h2>Create Account</h2> <!-- Heading for the registration form -->
+
+            <!-- Label and input field for first name, 'required' ensures the field must be filled -->
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <!-- Label and input field for last name -->
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <!-- Label and input field for email, type 'email' helps with automatic validation -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Label and input for password -->
+            <label for="reg-password">Password</label>
+            <input type="password" id="reg-password" name="password" required>
+
+            <!-- Label and input for confirming password -->
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <!-- Submit button for the form -->
+            <button type="submit">Register</button>
+
+            <!-- Link to the login page for users who already have an account -->
+            <p class="message">Already registered? <a href="../login.html">Log in</a></p>
+        </form>
+    </div>
+
+    <!-- External JavaScript file for additional functionality -->
+    <script src="../js/index.js"></script>
+    <script src="../js/register.js"></script>
+
+</body>
+
+</html>
