@@ -34,14 +34,18 @@ document.addEventListener('DOMContentLoaded', async function () {
                 <div class="color">
                     <div class="yellow"></div>
                     <div class="grey"></div>
-                    <div the "pink"></div>
+                    <div class="pink"></div>
                     <div class="red"></div>
                     <div class="one">+1</div>
                 </div>
                 <div class="wrapper">
                     <p>${product.name}</p>
                     <div class="star">
-                        <!-- Add stars dynamically if needed -->
+                         <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star-half"></i>
                     </div>
                 </div>
                 <small>${product.price}</small>
