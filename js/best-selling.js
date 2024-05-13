@@ -32,7 +32,7 @@ function populateProducts(bestSellingData) {
         const productInfo = document.createElement('div');
         productInfo.className = 'product-info';
         productInfo.innerHTML = `
-            <h2 class="product-brand">Brand Name</h2>
+            <h2 class="product-brand">${product.brand}</h2>
             <p class="product-short-description">${product.name}</p>
             <span class="price">${product.price}</span>
             <span class="actual-price">${product.actualPrice}</span>
@@ -61,7 +61,7 @@ function addToCart(product) {
         window.location.href = './login.html'; // Redirect to login if not logged in
         return;
     }
-    
+
     // Parse the current user's data from JSON
     let currentUser = JSON.parse(currentUserJSON);
     // Retrieve the list of users from localStorage and parse it

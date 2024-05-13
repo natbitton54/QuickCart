@@ -2,6 +2,7 @@
   "bestSelling": [
     {
       "id": "1",
+      "brand": "NIKE",
       "name": "Nike Vomero 17 Men's Road Running Shoes",
       "image": "./img/products-shoes/best-selling-nike-vomero.png",
       "price": "$155",
@@ -10,6 +11,7 @@
     },
     {
       "id": "2",
+      "brand": "NIKE",
       "name": "Nike Air Force 1 '07 LE Low",
       "image": "./img/products-shoes/best-selling-nike-af1.png",
       "price": "$105",
@@ -18,6 +20,7 @@
     },
     {
       "id": "3",
+      "brand": "PUMA",
       "name": "Deviate NITRO™ Elite 2 Men's Running Shoes",
       "image": "./img/products-shoes/best-selling-Deviate-NITR-Elite-2-Men's.png",
       "price": "$195",
@@ -26,6 +29,7 @@
     },
     {
       "id": "4",
+      "brand": "ADIDAS",
       "name": "Y-3 RIVALRY",
       "image": "./img/products-shoes/best-selling-Y-3_Rivalry_White_FZ6396_01_standard.png",
       "price": "$338",
@@ -34,6 +38,7 @@
     },
     {
       "id": "5",
+      "brand": "PUMA",
       "name": "Dime Club C Revenge Shoes",
       "image": "./img/products-shoes/best-selling-rebook-dime.png",
       "price": "$148",
@@ -42,6 +47,7 @@
     },
     {
       "id": "6",
+      "brand": "NEW BALANCE",
       "name": "Made in USA 990v6",
       "image": "./img/products-shoes/best-selling-new-balance.png",
       "price": "$234",
@@ -50,6 +56,7 @@
     },
     {
       "id": "7",
+      "brand": "NIKE",
       "name": "Nike Air Max Plus",
       "image": "./img/products-shoes/best-selling-nike-air-max.png",
       "price": "$196",
@@ -67,7 +74,7 @@
     },
     {
       "id": "9",
-      "name": "Jumpman MVP Shoes",
+      "name": "Nike Jumpman MVP Shoes",
       "price": "$215",
       "image": "./img/products-shoes/popular-shoe-nike-jordan-mvp.png",
       "addToCartButton": true
