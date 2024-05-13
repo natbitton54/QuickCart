@@ -147,7 +147,7 @@ function completePurchase(fullName) {
 
 
     // Alert user of successful purchase and provide a receipt
-    alert(`Thank you for your purchase, ${fullName}!\n\nReceipt:\nTotal Items: ${totalItems}\nTotal Price: $${totalPrice.toFixed(2)}\nShipping: $${shippingCost.toFixed(2)}\nGrand Total: $${(totalPrice + shippingCost).toFixed(2)}`);
+    alert(`Thank you for your purchase, ${fullName}!\n\nReceipt:\nTotal Items: ${totalItems}\nTotal Price: $${totalPrice.toFixed(2)}\nShipping: $${shippingCost.toFixed(2)}\nShipping: Will ship within 2 - 3 business days\nGrand Total: $${(totalPrice + shippingCost).toFixed(2)}`);
 
     // Clear the cart post-purchase and save the updated data
     users[userIndex].cart = [];
