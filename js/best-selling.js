@@ -24,7 +24,7 @@ function populateProducts(bestSellingData) {
         const productImage = document.createElement('div');
         productImage.className = 'product-image';
         productImage.innerHTML = `
-            <span class="discount-tag">50% off</span>
+            <span class="discount-tag">${product.OnSale} off</span>
             <img src="${product.image}" class="product-thumb" alt="${product.name}">
             <button class="card-btn" id="addToCart${product.id}">Add to Cart</button>
         `;

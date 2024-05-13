@@ -7,6 +7,7 @@
       "image": "./img/products-shoes/best-selling-nike-vomero.png",
       "price": "$155",
       "actualPrice": "$310",
+      "OnSale": "50%",
       "addToCartButton": true
     },
     {
@@ -16,6 +17,7 @@
       "image": "./img/products-shoes/best-selling-nike-af1.png",
       "price": "$105",
       "actualPrice": "$150",
+      "OnSale": "30%",
       "addToCartButton": true
     },
     {
@@ -25,6 +27,7 @@
       "image": "./img/products-shoes/best-selling-Deviate-NITR-Elite-2-Men's.png",
       "price": "$195",
       "actualPrice": "$260",
+      "OnSale": "25%",
       "addToCartButton": true
     },
     {
@@ -34,6 +37,7 @@
       "image": "./img/products-shoes/best-selling-Y-3_Rivalry_White_FZ6396_01_standard.png",
       "price": "$338",
       "actualPrice": "$520",
+      "OnSale": "35%",
       "addToCartButton": true
     },
     {
@@ -43,6 +47,7 @@
       "image": "./img/products-shoes/best-selling-rebook-dime.png",
       "price": "$148",
       "actualPrice": "$185",
+      "OnSale": "20%",
       "addToCartButton": true
     },
     {
@@ -52,6 +57,7 @@
       "image": "./img/products-shoes/best-selling-new-balance.png",
       "price": "$234",
       "actualPrice": "$260",
+      "OnSale": "10%",
       "addToCartButton": true
     },
     {
@@ -61,6 +67,7 @@
       "image": "./img/products-shoes/best-selling-nike-air-max.png",
       "price": "$196",
       "actualPrice": "$245",
+      "OnSale": "20%",
       "addToCartButton": true
     }
   ],
