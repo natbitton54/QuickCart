@@ -42,7 +42,7 @@ Source Code and Contributions
 The source code is available on GitHub at QuickCart Repository. Contributions to the project are welcome. Please follow the standard pull request process if you wish to contribute.
 
 License
-QuickCart is licensed under CC BY-NC-ND 4.0
+QuickCart is licensed under CC BY-NC-4.0
 
 Credits
 Images: Product images are sourced from official brand websites like Nike, Adidas, Puma, Reebok, and New Balance, banner slide images created by chatgpt.
